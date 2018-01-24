@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'sample-component',
+  selector: 'ngx-video-scrubber',
   template: `<h1>Sample component</h1>`
 })
-export class SampleComponent {
+export class VideoScrubberComponent {
 
   constructor() {
   }

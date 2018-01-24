@@ -2,21 +2,21 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By }              from '@angular/platform-browser';
 import { DebugElement }    from '@angular/core';
 
-import { SampleComponent } from './sample.component';
+import { VideoScrubberComponent } from './video-scrubber.component';
 
-describe('SampleComponent', () => {
+describe('VideoScrubberComponent', () => {
 
-  let comp:    SampleComponent;
-  let fixture: ComponentFixture<SampleComponent>;
+  let comp:    VideoScrubberComponent;
+  let fixture: ComponentFixture<VideoScrubberComponent>;
   let de:      DebugElement;
   let el:      HTMLElement;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ SampleComponent ], // declare the test component
+      declarations: [ VideoScrubberComponent ], // declare the test component
     });
 
-    fixture = TestBed.createComponent(SampleComponent);
+    fixture = TestBed.createComponent(VideoScrubberComponent);
 
     comp = fixture.componentInstance; // BannerComponent test instance
 

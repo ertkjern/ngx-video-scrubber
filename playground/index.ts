@@ -5,19 +5,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Component } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import {VideoScrubberModule} from '../src/index';
 
-import { SampleModule }  from 'ngx-video-scrubber';
 
 @Component({
   selector: 'app',
-  template: `<sample-component></sample-component>`
+  template: `<ngx-video-scrubber></ngx-video-scrubber>`
 })
 class AppComponent {}
 
 @NgModule({
   bootstrap: [ AppComponent ],
   declarations: [ AppComponent ],
-  imports: [ BrowserModule, SampleModule ]
+  imports: [ BrowserModule, VideoScrubberModule ]
 })
 class AppModule {}
 
