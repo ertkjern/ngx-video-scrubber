@@ -13,7 +13,9 @@ describe('VideoScrubberComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ VideoScrubberComponent ], // declare the test component
+      declarations: [
+          VideoScrubberComponent
+      ], // declare the test component
     });
 
     fixture = TestBed.createComponent(VideoScrubberComponent);
@@ -21,11 +23,11 @@ describe('VideoScrubberComponent', () => {
     comp = fixture.componentInstance; // BannerComponent test instance
 
     // query for the title <h1> by CSS element selector
-    de = fixture.debugElement.query(By.css('h1'));
+    de = fixture.debugElement.query(By.css('video'));
     el = de.nativeElement;
   });
 
-  it('Should be false', () => {
-    expect(false).toBe(true);
+  it('el be true', () => {
+    expect(el).toBe(true);
   });
 });

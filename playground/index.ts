@@ -10,7 +10,7 @@ import {VideoScrubberModule} from '../src/index';
 
 @Component({
   selector: 'app',
-  template: `<ngx-video-scrubber></ngx-video-scrubber>`
+  template: `<ngx-video-scrubber [src]="'./planet-earth.mp4'"></ngx-video-scrubber>`
 })
 class AppComponent {}
 
