@@ -4,6 +4,8 @@
 
 Ngx-video-scrubber is an Angular X component, used to scrub a video during scrolling. Inspired by the websites of Apple.
 
+[DEMO](https://vinoppskrifter.net/)
+
 ## Installation
 
 To install this library, run:
