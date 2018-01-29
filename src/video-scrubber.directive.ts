@@ -9,7 +9,7 @@ export class VideoScrubberDirective {
 
   constructor(private el: ElementRef) {
     this.videoTimer = setInterval(() =>
-            el.nativeElement.currentTime = (window.pageYOffset / 400),
+            el.nativeElement.currentTime = (window.pageYOffset / 500),
         80);
   }
 
