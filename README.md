@@ -1,16 +1,8 @@
-# ngx-video-scrubber (UNDER DEVELOPMENT - NOT YET IN NPM)
+# ngx-video-scrubber
 
 ## Installation
 
 To install this library, run:
-
-```bash
-$ npm install ngx-video-scrubber --save
-```
-
-## Consuming your library
-
-Once you have published your library to npm, you can import your library in any Angular application by running:
 
 ```bash
 $ npm install ngx-video-scrubber
@@ -25,7 +17,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'ngx-video-scrubber';
+import { VideoScrubberModule } from 'ngx-video-scrubber';
 
 @NgModule({
   declarations: [
@@ -33,9 +25,7 @@ import { SampleModule } from 'ngx-video-scrubber';
   ],
   imports: [
     BrowserModule,
-
-    // Specify your library as an import
-    LibraryModule
+    VideoScrubberModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -43,28 +33,31 @@ import { SampleModule } from 'ngx-video-scrubber';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once the library is imported, you can use its components.
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<sampleComponent></sampleComponent>
+<ngx-video-scrubber [mp4]="'../assets/test.mp4'"></ngx-video-scrubber>
 ```
 
-## Development
+## Parameters
 
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
+Currently there are support for three movie formats. All can be used as input to the component. One is mandatory, the rest is optional.
+
+| Input         |
+| ------------- |
+| mp4           |
+| mov           |
+| ogg           |
+
+
+## Why is my movie lagging?
+
+The number of keyframes might not be optimal. It is suggested to run the video trough FFMPEG before using it in the component.
+
+To get the video to scroll smoothly run the following command in ffmpeg.
 
 ```bash
-$ npm run build
-```
-
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
+ffmpeg -i input.mp4 -g 10 output.mp4
 ```
 
 ## License
