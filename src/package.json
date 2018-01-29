@@ -1,0 +1,28 @@
+{
+  "name": "ngx-video-scrubber",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ertkjern/ngx-video-scrubber"
+  },
+  "author": {
+    "name": "Ørjan Ertkjern",
+    "email": "orjanert@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ertkjern/ngx-video-scrubber/issues"
+  },
+  "main": "ngx-video-scrubber.umd.js",
+  "module": "ngx-video-scrubber.js",
+  "jsnext:main": "ngx-video-scrubber.js",
+  "typings": "ngx-video-scrubber.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
