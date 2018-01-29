@@ -1,4 +1,6 @@
-# ngx-video-scrubber
+# ngx-video-scrubber (Under developing, not available on npm yet)
+
+Ngx-video-scrubber is used to scrub a video during scrolling. Inspired by the websites of Apple.
 
 ## Installation
 
