@@ -51,10 +51,10 @@ Currently there are support for three movie formats. All can be used as input to
 
 | Input         | Default Value | Optional      | Description   |
 | ------------- | ------------- | ------------- | ------------- |
-| mp4           | undefined     | true          | movie to scrub|
-| mov           | undefined     | true          | movie to scrub|
-| ogg           | undefined     | true          | movie to scrub|
-| height        | undefined     | true          | override calculated height of movie|
+| mp4           | undefined     | true          | Movie to scrub|
+| mov           | undefined     | true          | Movie to scrub|
+| ogg           | undefined     | true          | Movie to scrub|
+| height        | undefined     | true          | Override the calculated height of movie. Used if you want a shorter scroll animation|
 
 ## Why is my movie lagging?
 
