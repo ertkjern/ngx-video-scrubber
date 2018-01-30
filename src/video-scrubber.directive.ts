@@ -5,11 +5,12 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 })
 
 export class VideoScrubberDirective {
+  private playbackConst = 500;
   private videoTimer: any;
 
   constructor(private el: ElementRef) {
     this.videoTimer = setInterval(() =>
-            el.nativeElement.currentTime = (window.pageYOffset / 500),
+            el.nativeElement.currentTime = (window.pageYOffset / this.playbackConst),
         80);
   }
 

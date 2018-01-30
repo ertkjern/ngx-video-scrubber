@@ -1,5 +1,5 @@
 <div id="videoContainer">
-    <div id="set-height" [style.height.px]="duration"></div>
+    <div id="set-height" [style.height.px]="calculatedHeight"></div>
     <video id="video" videoScrubber (loadedmetadata)="onVideoLoaded($event)" preload="auto" playsinline autoplay muted>
         <source *ngIf="mp4" [src]="mp4" type="video/mp4" />
         <source *ngIf="mov" [src]="mov"  type="video/mov" />

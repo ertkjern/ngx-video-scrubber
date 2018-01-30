@@ -49,16 +49,16 @@ Once the library is imported, you can use its components.
 
 Currently there are support for three movie formats. All can be used as input to the component. One is mandatory, the rest is optional.
 
-| Input         |
-| ------------- |
-| mp4           |
-| mov           |
-| ogg           |
-
+| Input         | Default Value | Optional      | Description   |
+| ------------- | ------------- | ------------- | ------------- |
+| mp4           | undefined     | true          | Movie to scrub|
+| mov           | undefined     | true          | Movie to scrub|
+| ogg           | undefined     | true          | Movie to scrub|
+| height        | undefined     | true          | Override the calculated height of movie. Used if you want a shorter scroll animation|
 
 ## Why is my movie lagging?
 
-The number of keyframes might not be optimal. It is suggested to run the video trough FFMPEG before using it in the component.
+The number of keyframes might not be optimal. It is suggested to run the video trough [FFMPEG](https://www.ffmpeg.org/) before using it in the component.
 
 To get the video to scroll smoothly run the following command in ffmpeg.
 
@@ -68,4 +68,4 @@ ffmpeg -i input.mp4 -g 10 output.mp4
 
 ## License
 
-MIT © [Ørjan Ertkjern](mailto:orjanert@gmail.com)
+MIT © [Ertkjern](mailto:orjanert@gmail.com)
