@@ -22,7 +22,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
+// Import the library
 import { VideoScrubberModule } from 'ngx-video-scrubber';
 
 @NgModule({
@@ -54,7 +54,7 @@ Currently there are support for three movie formats. All can be used as input to
 | mp4           | undefined     | true          | Movie to scrub|
 | mov           | undefined     | true          | Movie to scrub|
 | ogg           | undefined     | true          | Movie to scrub|
-| height        | undefined     | true          | Override the calculated height of movie. Used if you want a shorter scroll animation|
+| height        | undefined     | true          | Override the calculated height of the movie. Used if you want a shorter scroll animation|
 
 ## Why is my movie lagging?
 
