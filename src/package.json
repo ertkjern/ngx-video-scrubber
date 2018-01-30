@@ -10,7 +10,10 @@
     "email": "orjanert@gmail.com"
   },
   "keywords": [
-    "angular"
+    "angular",
+    "video",
+    "scrub",
+    "scroll"
   ],
   "license": "MIT",
   "bugs": {
