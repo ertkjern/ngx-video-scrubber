@@ -9,14 +9,19 @@ export class VideoScrubberComponent {
   @Input() mp4: string;
   @Input() mov: string;
   @Input() ogg: string;
-  duration: number;
+  @Input() height: number;
+  calculatedHeight: number;
 
   constructor() {
   }
 
   onVideoLoaded(video) {
-    if (video.target) {
-      this.duration = Math.floor(video.target.duration) * 250;
+    if(this.height > 0){
+      this.calculatedHeight = this.height; // don't do height calculation. Set manually.
+    } else {
+      if (video.target) {
+        this.calculatedHeight = Math.floor(video.target.duration) * 250; // 250 = video duration * playback constant
+      }
     }
   }
 
